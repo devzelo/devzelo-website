@@ -99,18 +99,30 @@
   </style>
 
 
-  <script type="importmap">
-{
-  "imports": {
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-    "react/": "https://aistudiocdn.com/react@^19.2.1/",
-    "react": "https://aistudiocdn.com/react@^19.2.1",
-    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
-    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0"
-  }
-}
-</script>
-  <script type="module" crossorigin src="/assets/index-BYRCoDbu.js"></script>
+  <script>
+    if (location.protocol === 'file:') {
+      (function () {
+        var _path = '/';
+        var _search = '';
+        try {
+          Object.defineProperty(window.location, 'pathname', { get: function () { return _path; }, configurable: true });
+          Object.defineProperty(window.location, 'search', { get: function () { return _search; }, configurable: true });
+        } catch (e) { }
+        var _push = history.pushState.bind(history);
+        var _replace = history.replaceState.bind(history);
+        history.pushState = function (s, t, url) {
+          if (url) { try { var u = new URL(url, 'http://x'); _path = u.pathname; _search = u.search; } catch (e) { } }
+          window.dispatchEvent(new PopStateEvent('popstate', { state: s }));
+        };
+        history.replaceState = function (s, t, url) {
+          if (url) { try { var u = new URL(url, 'http://x'); _path = u.pathname; _search = u.search; } catch (e) { } }
+        };
+      })();
+    }
+  </script>
+  <script defer src="./assets/index-BYRCoDbu.js"></script>
+  <script>window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };</script>
+  <script defer src="/_vercel/speed-insights/script.js"></script>
 </head>
 
 <body>
