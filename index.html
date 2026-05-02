@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devzelo | Future-Proof Software Solutions</title>
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' fill='none'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='40' y2='40' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%233B82F6' /%3E%3Cstop offset='1' stop-color='%2306b6d4' /%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='20' cy='20' r='6' stroke='url(%23g)' stroke-width='2.5' fill='none' /%3E%3Ccircle cx='20' cy='20' r='2.5' fill='%233B82F6' /%3E%3Cpath d='M20 14 V6 M20 26 V34 M14 20 H6 M26 20 H34 M16 16 L10 10 M24 24 L30 30 M16 24 L10 30 M24 16 L30 10' stroke='url(%23g)' stroke-width='2' stroke-linecap='round' /%3E%3Ccircle cx='20' cy='4' r='2' fill='%2306b6d4' /%3E%3Ccircle cx='36' cy='20' r='2' fill='%233B82F6' /%3E%3Ccircle cx='20' cy='36' r='2' fill='%2306b6d4' /%3E%3Ccircle cx='4' cy='20' r='2' fill='%233B82F6' /%3E%3Cpath d='M34 20 A 14 14 0 0 1 20 34' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='4 4' opacity='0.5' /%3E%3Cpath d='M6 20 A 14 14 0 0 1 20 6' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='4 4' opacity='0.5' /%3E%3C/svg%3E" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
+    rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            devzelo: {
+              blue: '#3B82F6',    // blue-500
+              cyan: '#06b6d4',    // cyan-500
+              dark: '#020617',    // slate-950
+              gray: '#0f172a',    // slate-900
+            }
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+          },
+          backgroundImage: {
+            'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body {
+      background-color: #020617;
+      color: #ffffff;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #020617;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #3B82F6;
+    }
+
+    /* Animations */
+    @keyframes blob {
+      0% {
+        transform: translate(0px, 0px) scale(1);
+      }
+
+      33% {
+        transform: translate(30px, -50px) scale(1.1);
+      }
+
+      66% {
+        transform: translate(-20px, 20px) scale(0.9);
+      }
+
+      100% {
+        transform: translate(0px, 0px) scale(1);
+      }
+    }
+
+    .animate-blob {
+      animation: blob 7s infinite;
+    }
+
+    .animation-delay-2000 {
+      animation-delay: 2s;
+    }
+
+    .animation-delay-4000 {
+      animation-delay: 4s;
+    }
+
+    .bg-grid-pattern {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+      background-size: 40px 40px;
+    }
+  </style>
+
+
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "framer-motion": "https://aistudiocdn.com/framer-motion@^12.23.25",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.556.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/assets/index-BYRCoDbu.js"></script>
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
+</html>
