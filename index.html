@@ -1,134 +1,711 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devzelo – Premium Software Agency | Digital Product Development</title>
+  <meta name="description" content="Devzelo builds market-defining digital products – mobile apps, AI automation, UI/UX, robotics, IoT, and bespoke software. Premium agency with 50+ projects delivered and 100% client retention.">
+  <link rel="canonical" href="https://devzelo.com/" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="preload" href="style.css" as="style" onload="this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="style.css"/></noscript>
+</head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Devzelo | Future-Proof Software Solutions</title>
-  <link rel="icon"
-    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' fill='none'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='40' y2='40' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%233B82F6' /%3E%3Cstop offset='1' stop-color='%2306b6d4' /%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='20' cy='20' r='6' stroke='url(%23g)' stroke-width='2.5' fill='none' /%3E%3Ccircle cx='20' cy='20' r='2.5' fill='%233B82F6' /%3E%3Cpath d='M20 14 V6 M20 26 V34 M14 20 H6 M26 20 H34 M16 16 L10 10 M24 24 L30 30 M16 24 L10 30 M24 16 L30 10' stroke='url(%23g)' stroke-width='2' stroke-linecap='round' /%3E%3Ccircle cx='20' cy='4' r='2' fill='%2306b6d4' /%3E%3Ccircle cx='36' cy='20' r='2' fill='%233B82F6' /%3E%3Ccircle cx='20' cy='36' r='2' fill='%2306b6d4' /%3E%3Ccircle cx='4' cy='20' r='2' fill='%233B82F6' /%3E%3Cpath d='M34 20 A 14 14 0 0 1 20 34' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='4 4' opacity='0.5' /%3E%3Cpath d='M6 20 A 14 14 0 0 1 20 6' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='4 4' opacity='0.5' /%3E%3C/svg%3E" />
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
-    rel="stylesheet">
-  <script>
-    tailwind.config = {
-      theme: {
-        extend: {
-          colors: {
-            devzelo: {
-              blue: '#3B82F6',    // blue-500
-              cyan: '#06b6d4',    // cyan-500
-              dark: '#020617',    // slate-950
-              gray: '#0f172a',    // slate-900
-            }
-          },
-          fontFamily: {
-            sans: ['Inter', 'sans-serif'],
-            display: ['Space Grotesk', 'sans-serif'],
-          },
-          backgroundImage: {
-            'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-          }
-        }
-      }
-    }
-  </script>
+
+  <!-- ── Primary SEO ── -->
+  <title>Devzelo | Future-Proof Software Solutions — Lahore, Pakistan</title>
+  <meta name="description" content="Devzelo builds future-proof software — mobile apps, AI automation, IoT ecosystems, robotics & bespoke digital infrastructure for startups and global enterprises. Based in Lahore, Pakistan." />
+  <meta name="keywords" content="software development, mobile app development, AI automation, IoT development, UI UX design, robotics software, bespoke software, web development, Lahore, Pakistan, Flutter, React, Next.js" />
+  <meta name="author" content="Devzelo" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://devzelo.com/" />
+
+  <!-- ── Open Graph ── -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://devzelo.com/" />
+  <meta property="og:title" content="Devzelo | Future-Proof Software Solutions" />
+  <meta property="og:description" content="We architect ecosystems. From AI-driven automation to immersive mobile experiences, Devzelo transforms ambitious concepts into market-dominating solutions." />
+  <meta property="og:image" content="https://devzelo.com/og-image.jpg" />
+  <meta property="og:site_name" content="Devzelo" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- ── Twitter Card ── -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Devzelo | Future-Proof Software Solutions" />
+  <meta name="twitter:description" content="We architect ecosystems. AI, mobile apps, IoT and bespoke software — Lahore, Pakistan." />
+  <meta name="twitter:image" content="https://devzelo.com/og-image.jpg" />
+  <meta name="theme-color" content="#030712" />
+  <meta name="geo.region" content="PK-PB" />
+  <meta name="geo.placename" content="Lahore, Pakistan" />
+
+  <!-- ── Favicon ── -->
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40' fill='none'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='40' y2='40' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%233B82F6' /%3E%3Cstop offset='1' stop-color='%2306b6d4' /%3E%3C/linearGradient%3E%3C/defs%3E%3Ccircle cx='20' cy='20' r='6' stroke='url(%23g)' stroke-width='2.5' fill='none' /%3E%3Ccircle cx='20' cy='20' r='2.5' fill='%233B82F6' /%3E%3Cpath d='M20 14 V6 M20 26 V34 M14 20 H6 M26 20 H34 M16 16 L10 10 M24 24 L30 30 M16 24 L10 30 M24 16 L30 10' stroke='url(%23g)' stroke-width='2' stroke-linecap='round' /%3E%3Ccircle cx='20' cy='4' r='2' fill='%2306b6d4' /%3E%3Ccircle cx='36' cy='20' r='2' fill='%233B82F6' /%3E%3Ccircle cx='20' cy='36' r='2' fill='%2306b6d4' /%3E%3Ccircle cx='4' cy='20' r='2' fill='%233B82F6' /%3E%3Cpath d='M34 20 A 14 14 0 0 1 20 34' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='4 4' opacity='0.5' /%3E%3Cpath d='M6 20 A 14 14 0 0 1 20 6' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-dasharray='4 4' opacity='0.5' /%3E%3C/svg%3E" />
+
+  <!-- ── Fonts ── -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" /></noscript>
+
+
+  <!-- ── Shared design system ── -->
+  <link rel="stylesheet" href="style.css" />
+
   <style>
-    body {
-      background-color: #020617;
-      color: #ffffff;
+    #hero{
+      min-height:100vh;display:flex;align-items:center;
+      overflow:clip;
+      background:transparent;position:relative;
     }
-
-    /* Custom Scrollbar */
-    ::-webkit-scrollbar {
-      width: 8px;
+    .hero-text{max-width:700px;position:relative;z-index:2}
+    .hbtns{display:flex;gap:14px;flex-wrap:wrap}
+    .hmetrics{display:flex;gap:40px;margin-top:72px;flex-wrap:wrap;align-items:center}
+    .hero-vid-float{
+      position:absolute;right:28px;
+      /* bottom = metrics height (~50px) + metrics margin-top (72px) = ~122px */
+      bottom:122px;
+      width:330px;height:228px;
+      border:1px solid rgba(59,130,246,.28);border-radius:20px;
+      overflow:hidden;position:absolute;
+      background:url('assets/vie-thumnail.png') center/cover no-repeat;
+      box-shadow:0 0 60px rgba(59,130,246,.18),0 8px 40px rgba(0,0,0,.45);
+      transition:transform .35s cubic-bezier(.23,1,.32,1),box-shadow .35s cubic-bezier(.23,1,.32,1);
+      transform-style:preserve-3d;
+      will-change:transform;
     }
-
-    ::-webkit-scrollbar-track {
-      background: #020617;
+    .hero-vid-float:hover{
+      box-shadow:
+        0 0 0 1px rgba(99,179,237,.35),
+        0 8px 20px rgba(0,0,0,.5),
+        0 20px 60px rgba(59,130,246,.28),
+        0 0 80px rgba(6,182,212,.15);
     }
-
-    ::-webkit-scrollbar-thumb {
-      background: #1e293b;
-      border-radius: 4px;
+    .hero-vid-float::after{content:'';position:absolute;inset:0;background:rgba(4,4,14,.32);pointer-events:none;border-radius:20px}
+    @media(max-width:1060px){.hero-vid-float{display:none}}
+    .hbadge{
+      display:inline-flex;align-items:center;gap:9px;
+      padding:8px 18px;
+      background:rgba(59,130,246,.09);border:1px solid rgba(59,130,246,.22);
+      border-radius:100px;font-size:.75rem;color:var(--blue);
+      letter-spacing:.08em;text-transform:uppercase;font-weight:500;
+      margin-bottom:30px;
     }
+    .hbadge-dot{width:6px;height:6px;background:var(--blue);border-radius:50%;animation:pulse 2s infinite}
+    .h1{font-size:clamp(2.2rem,4.9vw,4.4rem);font-weight:700;line-height:1.06;letter-spacing:-.035em;margin-bottom:28px}
+    .hp{font-size:1.05rem;color:var(--muted);max-width:560px;line-height:1.78;margin-bottom:44px}
+    .hbtns{display:flex;gap:14px;flex-wrap:wrap}
+    .hmetrics{display:flex;gap:40px;margin-top:72px;flex-wrap:wrap;align-items:center}
+    .hm-val{font-size:1.9rem;font-weight:800;font-family:'Space Grotesk',sans-serif;letter-spacing:-.03em;line-height:1}
+    .hm-lbl{font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.1em;margin-top:5px}
+    .hm-div{width:1px;height:40px;background:var(--border)}
 
-    ::-webkit-scrollbar-thumb:hover {
-      background: #3B82F6;
-    }
+    /* ── Tech section ── */
+    #tech{border-top:1px solid var(--border);border-bottom:1px solid var(--border);overflow:hidden}
+    .tech-lbl{text-align:center;font-size:.72rem;color:var(--muted);text-transform:uppercase;letter-spacing:.15em;margin-bottom:32px}
 
-    /* Animations */
-    @keyframes blob {
-      0% {
-        transform: translate(0px, 0px) scale(1);
-      }
+    /* ── Services section ── */
+    .svc-hdr{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:72px}
+    /* Mobile overrides handled in style.css */
 
-      33% {
-        transform: translate(30px, -50px) scale(1.1);
-      }
-
-      66% {
-        transform: translate(-20px, 20px) scale(0.9);
-      }
-
-      100% {
-        transform: translate(0px, 0px) scale(1);
-      }
-    }
-
-    .animate-blob {
-      animation: blob 7s infinite;
-    }
-
-    .animation-delay-2000 {
-      animation-delay: 2s;
-    }
-
-    .animation-delay-4000 {
-      animation-delay: 4s;
-    }
-
-    .bg-grid-pattern {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
-        linear-gradient(to bottom, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-      background-size: 40px 40px;
-    }
+    /* ── About / Process / Works / Testimonials / FAQ / CTA ── */
+    .ph{text-align:center;margin-bottom:80px}
+    .ph .sp{margin:0 auto}
+    .fh{text-align:center;margin-bottom:60px}
+    .fh .sp{margin:0 auto}
   </style>
 
+  <!-- ── Structured data ── -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["Organization", "LocalBusiness"],
+        "@id": "https://devzelo.com/#organization",
+        "name": "Devzelo",
+        "url": "https://devzelo.com",
+        "logo": "https://devzelo.com/og-image.jpg",
+        "description": "Future-proof software agency specialising in mobile apps, AI automation, IoT ecosystems, robotics and bespoke digital infrastructure.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Lahore",
+          "addressRegion": "Punjab",
+          "addressCountry": "PK"
+        },
+        "areaServed": "Worldwide",
+        "serviceType": ["Mobile App Development","AI & Automation","UI/UX Design","Robotics & Hardware","IoT Ecosystems","Bespoke Software"],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "customer service",
+          "url": "https://cal.com/devzelo/30min",
+          "availableLanguage": "English"
+        },
+        "sameAs": [
+          "https://linkedin.com/company/devzelo",
+          "https://twitter.com/devzelo",
+          "https://github.com/devzelo",
+          "https://instagram.com/devzelo"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://devzelo.com/#website",
+        "url": "https://devzelo.com",
+        "name": "Devzelo",
+        "publisher": { "@id": "https://devzelo.com/#organization" }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://devzelo.com/#webpage",
+        "url": "https://devzelo.com",
+        "name": "Devzelo | Future-Proof Software Solutions",
+        "isPartOf": { "@id": "https://devzelo.com/#website" },
+        "about": { "@id": "https://devzelo.com/#organization" },
+        "description": "Devzelo builds future-proof software — mobile apps, AI automation, IoT ecosystems, robotics & bespoke digital infrastructure."
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What industries do you specialise in?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We are industry-agnostic but have deep expertise in FinTech, Healthcare, Agriculture, and E-commerce. Our core strength lies in solving complex technical challenges regardless of the vertical."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you handle project communication?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We believe in radical transparency. You get access to our Slack/Discord and Jira/Trello boards. We hold weekly sprint reviews to ensure the product evolves exactly as you envision."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can you take over an existing codebase?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We perform a comprehensive code audit first to identify technical debt and security vulnerabilities, then propose a refactoring or expansion plan."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide post-launch support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. We offer various maintenance packages including server monitoring, bug fixes, and feature updates to keep your software running smoothly."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
 
+  <!-- ── Vercel Analytics (production only) ── -->
   <script>
-    if (location.protocol === 'file:') {
-      (function () {
-        var _path = '/';
-        var _search = '';
-        try {
-          Object.defineProperty(window.location, 'pathname', { get: function () { return _path; }, configurable: true });
-          Object.defineProperty(window.location, 'search', { get: function () { return _search; }, configurable: true });
-        } catch (e) { }
-        var _push = history.pushState.bind(history);
-        var _replace = history.replaceState.bind(history);
-        history.pushState = function (s, t, url) {
-          if (url) { try { var u = new URL(url, 'http://x'); _path = u.pathname; _search = u.search; } catch (e) { } }
-          window.dispatchEvent(new PopStateEvent('popstate', { state: s }));
-        };
-        history.replaceState = function (s, t, url) {
-          if (url) { try { var u = new URL(url, 'http://x'); _path = u.pathname; _search = u.search; } catch (e) { } }
-        };
-      })();
+    if(location.hostname!=='localhost'&&location.hostname!=='127.0.0.1'){
+      window.si=window.si||function(){(window.siq=window.siq||[]).push(arguments)};
+      var _si=document.createElement('script');_si.defer=true;_si.src='/_vercel/speed-insights/script.js';document.head.appendChild(_si);
+      window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};
+      var _va=document.createElement('script');_va.defer=true;_va.src='/_vercel/insights/script.js';document.head.appendChild(_va);
     }
   </script>
-  <script defer src="./assets/index-BYRCoDbu.js"></script>
-  <script>window.si = window.si || function () { (window.siq = window.siq || []).push(arguments); };</script>
-  <script defer src="/_vercel/speed-insights/script.js"></script>
-  <script>window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };</script>
-  <script defer src="/_vercel/insights/script.js"></script>
 </head>
-
 <body>
-  <div id="root"></div>
-</body>
+<div id="co" aria-hidden="true"></div><div id="ci" aria-hidden="true"></div>
+<canvas id="webgl" aria-hidden="true"></canvas>
 
+<!-- VIDEO MODAL -->
+<div id="videoModal" class="vmodal" role="dialog" aria-modal="true" aria-label="Watch our story" aria-hidden="true" inert>
+  <div class="vmodal-bd" id="vmodalBd"></div>
+  <div class="vmodal-box">
+    <button class="vmodal-close" id="vmodalClose" aria-label="Close video">✕</button>
+    <video id="vmodalVideo" data-src="assets/Devzelo%20vsl.mp4" controls preload="metadata" style="width:100%; display:block; border-radius:inherit;" playsinline></video>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════════════════
+     NAVIGATION
+══════════════════════════════════════════════ -->
+<header id="nav" role="banner">
+  <div class="wrap">
+    <nav class="nav-in" aria-label="Main navigation">
+      <a href="/" class="logo" aria-label="Devzelo home">
+        <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <linearGradient id="nlg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#3B82F6"/>
+              <stop offset="1" stop-color="#06b6d4"/>
+            </linearGradient>
+          </defs>
+          <circle cx="20" cy="20" r="6" stroke="url(#nlg)" stroke-width="2.5" fill="none"/>
+          <circle cx="20" cy="20" r="2.5" fill="#3B82F6"/>
+          <path d="M20 14V6M20 26V34M14 20H6M26 20H34M16 16L10 10M24 24L30 30M16 24L10 30M24 16L30 10" stroke="url(#nlg)" stroke-width="2" stroke-linecap="round"/>
+          <circle cx="20" cy="4" r="2" fill="#06b6d4"/>
+          <circle cx="36" cy="20" r="2" fill="#3B82F6"/>
+          <circle cx="20" cy="36" r="2" fill="#06b6d4"/>
+          <circle cx="4" cy="20" r="2" fill="#3B82F6"/>
+          <path d="M34 20A14 14 0 0 1 20 34" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4" opacity="0.5"/>
+          <path d="M6 20A14 14 0 0 1 20 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4" opacity="0.5"/>
+        </svg>
+        <span><span style="color:#fff;-webkit-text-fill-color:#fff">Dev</span><span class="gt">zelo</span></span>
+      </a>
+
+      <ul class="nl" id="nl" role="list" inert>
+        <!-- mobile nav header row: logo only (close via hamburger X button) -->
+        <li class="mnav-header">
+          <a href="/" class="mnav-logo">
+            <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28" aria-hidden="true">
+              <defs>
+                <linearGradient id="mnlg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse">
+                  <stop stop-color="#3B82F6"/>
+                  <stop offset="1" stop-color="#06b6d4"/>
+                </linearGradient>
+              </defs>
+              <circle cx="20" cy="20" r="6" stroke="url(#mnlg)" stroke-width="2.5" fill="none"/>
+              <circle cx="20" cy="20" r="2.5" fill="#3B82F6"/>
+              <path d="M20 14V6M20 26V34M14 20H6M26 20H34M16 16L10 10M24 24L30 30M16 24L10 30M24 16L30 10" stroke="url(#mnlg)" stroke-width="2" stroke-linecap="round"/>
+              <circle cx="20" cy="4" r="2" fill="#06b6d4"/>
+              <circle cx="36" cy="20" r="2" fill="#3B82F6"/>
+              <circle cx="20" cy="36" r="2" fill="#06b6d4"/>
+              <circle cx="4" cy="20" r="2" fill="#3B82F6"/>
+              <path d="M34 20A14 14 0 0 1 20 34" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4" opacity="0.5"/>
+              <path d="M6 20A14 14 0 0 1 20 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4" opacity="0.5"/>
+            </svg>
+            <span><span style="color:#fff;-webkit-text-fill-color:#fff">Dev</span><span class="gt">zelo</span></span>
+          </a>
+        </li>
+        <li class="has-drop">
+          <a href="#services">Services <svg width="11" height="11" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></a>
+          <div class="ndrop" role="menu">
+            <a href="service-mobile-app.html" role="menuitem"><span class="ndrop-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></span>Mobile App Evolution</a>
+            <a href="service-ai.html" role="menuitem"><span class="ndrop-icon" style="background:rgba(6,182,212,.1);color:var(--cyan)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg></span>AI &amp; Automation</a>
+            <a href="service-ui-ux.html" role="menuitem"><span class="ndrop-icon" style="background:rgba(99,102,241,.1);color:var(--indigo)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></span>Immersive UI/UX</a>
+            <a href="service-robotics.html" role="menuitem"><span class="ndrop-icon" style="background:rgba(239,68,68,.1);color:var(--red)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2v4M5 6l3 3M19 6l-3 3M2 12h4M18 12h4M5 18l3-3M19 18l-3-3M12 22v-4M9 12a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/></svg></span>Robotics &amp; Hardware</a>
+            <a href="service-iot.html" role="menuitem"><span class="ndrop-icon" style="background:rgba(34,197,94,.1);color:var(--green)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="currentColor"/></svg></span>IoT Ecosystems</a>
+            <a href="service-bespoke.html" role="menuitem"><span class="ndrop-icon" style="background:rgba(251,191,36,.1);color:var(--amber)"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></span>Bespoke Software</a>
+          </div>
+        </li>
+        <li><a href="/#works">Works</a></li>
+        <li><a href="articles.html">Articles</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li class="m-only"><a href="https://cal.com/devzelo/30min" target="_blank" rel="noopener" class="ncta">Schedule Call</a></li>
+      </ul>
+
+      <a href="https://cal.com/devzelo/30min" target="_blank" rel="noopener" class="ncta">Schedule Call</a>
+      <button class="mbt" aria-label="Toggle menu" aria-expanded="false" aria-controls="nl">
+        <svg class="mbt-bars" width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+          <rect x="1" y="5" width="20" height="2" rx="1" fill="url(#mbtg)"/>
+          <rect x="1" y="10" width="20" height="2" rx="1" fill="url(#mbtg)"/>
+          <rect x="1" y="15" width="20" height="2" rx="1" fill="url(#mbtg)"/>
+          <defs><linearGradient id="mbtg" x1="0" y1="0" x2="22" y2="0"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+        </svg>
+        <svg class="mbt-x" width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+          <path d="M4 4l14 14M18 4L4 18" stroke="url(#mbtxg)" stroke-width="2.5" stroke-linecap="round"/>
+          <defs><linearGradient id="mbtxg" x1="0" y1="0" x2="22" y2="22"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- ══════════════════════════════════════════════
+     MAIN CONTENT
+══════════════════════════════════════════════ -->
+<main>
+
+  <!-- HERO -->
+  <section id="hero" aria-label="Hero">
+    <div class="wrap" style="position:relative;z-index:3;width:100%">
+
+      <!-- Hero text -->
+      <div class="hero-text">
+        <p class="hbadge"><span class="hbadge-dot" aria-hidden="true"></span>Premium Software Agency</p>
+        <h1 class="h1">We Build Software<br>That <span class="gt">Shapes</span><br>the Future.</h1>
+        <p class="hp">From AI-driven automation to immersive mobile experiences we transform ambitious ideas into market-defining digital products.</p>
+
+        <div class="hbtns">
+          <a href="https://cal.com/devzelo/30min" target="_blank" rel="noopener" class="btn1">Start a Project <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="#works" class="btn2">View Our Work</a>
+        </div>
+        <div class="hmetrics" aria-label="Key metrics">
+          <div><div class="hm-val gt">50+</div><div class="hm-lbl">Projects Delivered</div></div>
+          <div class="hm-div" aria-hidden="true"></div>
+          <div><div class="hm-val" style="color:var(--cyan)">100%</div><div class="hm-lbl">Client Retention</div></div>
+          <div class="hm-div" aria-hidden="true"></div>
+          <div><div class="hm-val" style="font-size:1rem;color:#fff">Lahore, PK</div><div class="hm-lbl">Engineering Global</div></div>
+        </div>
+      </div>
+
+      <!-- Video card — absolute, bottom aligned with buttons row -->
+      <div class="hero-vid-float">
+        <video id="hoverVideo" data-src="assets/Devzelo%20vsl.mp4" poster="assets/vie-thumnail.png" muted loop playsinline preload="metadata" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;border-radius:inherit;opacity:0;transition:opacity 0.3s ease;"></video>
+        <button id="videoTrigger" aria-label="Watch our story" style="position:absolute;inset:0;z-index:1;width:100%;height:100%;background:none;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;">
+          <div style="width:64px;height:64px;border-radius:50%;background:rgba(255,255,255,.15);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,.35);display:flex;align-items:center;justify-content:center;box-shadow:0 4px 24px rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.25);transition:transform .2s,box-shadow .2s;" onmouseover="this.style.transform='scale(1.08)';this.style.boxShadow='0 6px 36px rgba(0,0,0,.45),inset 0 1px 0 rgba(255,255,255,.3)'" onmouseout="this.style.transform='scale(1)';this.style.boxShadow='0 4px 24px rgba(0,0,0,.3),inset 0 1px 0 rgba(255,255,255,.25)'">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="rgba(255,255,255,.95)" aria-hidden="true" style="margin-left:3px"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TECH MARQUEE -->
+  <section id="tech" aria-label="Technologies we use">
+    <div class="wrap">
+      <p class="tech-lbl">Powering Next-Gen Solutions With</p>
+    </div>
+    <div class="mwrap" aria-hidden="true">
+      <div class="mtrack">
+        <div class="mitem"><span class="mdot"></span>React</div><div class="mitem"><span class="mdot"></span>Next.js</div><div class="mitem"><span class="mdot"></span>TypeScript</div><div class="mitem"><span class="mdot"></span>Python</div><div class="mitem"><span class="mdot"></span>Flutter</div><div class="mitem"><span class="mdot"></span>TensorFlow</div><div class="mitem"><span class="mdot"></span>Node.js</div><div class="mitem"><span class="mdot"></span>AWS</div><div class="mitem"><span class="mdot"></span>Docker</div><div class="mitem"><span class="mdot"></span>PostgreSQL</div><div class="mitem"><span class="mdot"></span>Firebase</div><div class="mitem"><span class="mdot"></span>Arduino</div>
+        <div class="mitem"><span class="mdot"></span>React</div><div class="mitem"><span class="mdot"></span>Next.js</div><div class="mitem"><span class="mdot"></span>TypeScript</div><div class="mitem"><span class="mdot"></span>Python</div><div class="mitem"><span class="mdot"></span>Flutter</div><div class="mitem"><span class="mdot"></span>TensorFlow</div><div class="mitem"><span class="mdot"></span>Node.js</div><div class="mitem"><span class="mdot"></span>AWS</div><div class="mitem"><span class="mdot"></span>Docker</div><div class="mitem"><span class="mdot"></span>PostgreSQL</div><div class="mitem"><span class="mdot"></span>Firebase</div><div class="mitem"><span class="mdot"></span>Arduino</div>
+        <div class="mitem"><span class="mdot"></span>React</div><div class="mitem"><span class="mdot"></span>Next.js</div><div class="mitem"><span class="mdot"></span>TypeScript</div><div class="mitem"><span class="mdot"></span>Python</div><div class="mitem"><span class="mdot"></span>Flutter</div><div class="mitem"><span class="mdot"></span>TensorFlow</div><div class="mitem"><span class="mdot"></span>Node.js</div><div class="mitem"><span class="mdot"></span>AWS</div><div class="mitem"><span class="mdot"></span>Docker</div><div class="mitem"><span class="mdot"></span>PostgreSQL</div><div class="mitem"><span class="mdot"></span>Firebase</div><div class="mitem"><span class="mdot"></span>Arduino</div>
+        <div class="mitem"><span class="mdot"></span>React</div><div class="mitem"><span class="mdot"></span>Next.js</div><div class="mitem"><span class="mdot"></span>TypeScript</div><div class="mitem"><span class="mdot"></span>Python</div><div class="mitem"><span class="mdot"></span>Flutter</div><div class="mitem"><span class="mdot"></span>TensorFlow</div><div class="mitem"><span class="mdot"></span>Node.js</div><div class="mitem"><span class="mdot"></span>AWS</div><div class="mitem"><span class="mdot"></span>Docker</div><div class="mitem"><span class="mdot"></span>PostgreSQL</div><div class="mitem"><span class="mdot"></span>Firebase</div><div class="mitem"><span class="mdot"></span>Arduino</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" aria-labelledby="about-heading">
+    <div class="wrap">
+      <div class="about-grid">
+        <div class="rv">
+          <p class="stag">Who We Are</p>
+          <h2 id="about-heading" class="sh2">Engineering Global<br><span class="gt">From Lahore, PK</span></h2>
+          <div class="divider" aria-hidden="true"></div>
+          <p class="sp">From complex Robotics integration to seamless AI automation, our roots are local, but our standards are fiercely global. We partner with founders and enterprises who refuse to settle for the ordinary.</p>
+          <div class="astats">
+            <div class="astat"><div class="aval gt" aria-label="50 plus projects">50+</div><div class="albl">Projects Delivered</div></div>
+            <div class="astat"><div class="aval" style="color:var(--cyan)" aria-label="100 percent retention">100%</div><div class="albl">Client Retention</div></div>
+          </div>
+          <a href="about.html" class="btn2" style="margin-top:28px;text-decoration:none;">Learn More About Us <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        </div>
+        <div class="aiw rv">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&q=80&w=800" alt="Devzelo team collaborating on software projects" class="aimg" width="800" height="600" loading="lazy"/>
+          <div class="abadge" aria-label="Availability status"><div class="abdot" aria-hidden="true"></div><div><div class="abtx">Available for Projects</div><div class="absub">Based in Lahore, PK</div></div></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" aria-labelledby="services-heading">
+    <div class="wrap">
+      <div class="svc-hdr">
+        <div>
+          <p class="stag">What We Do</p>
+          <h2 id="services-heading" class="sh2">Comprehensive Digital<br><span class="gt">Engineering</span></h2>
+        </div>
+        <p class="sp">Comprehensive digital engineering for the modern enterprise. We bridge the gap between imagination and implementation.</p>
+      </div>
+      <div class="sg rv" role="list">
+
+        <a href="service-mobile-app.html" class="sc" role="listitem">
+          <span class="sn" aria-hidden="true">01</span>
+          <div class="si" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="5" y="2" width="14" height="20" rx="2"/><path d="M12 18h.01"/></svg></div>
+          <h3>Mobile App Evolution</h3>
+          <p>Native and cross-platform experiences that dominate app stores. Flutter and React Native, built for peak performance.</p>
+          <span class="sarr" aria-hidden="true">→</span>
+        </a>
+
+        <a href="service-ai.html" class="sc" role="listitem">
+          <span class="sn" aria-hidden="true">02</span>
+          <div class="si" style="background:rgba(6,182,212,.08);border-color:rgba(6,182,212,.18);color:var(--cyan)" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg></div>
+          <h3>AI &amp; Automation</h3>
+          <p>Intelligent agents and predictive models. We integrate cutting-edge AI to automate workflows and scale decision-making.</p>
+          <span class="sarr" aria-hidden="true">→</span>
+        </a>
+
+        <a href="service-ui-ux.html" class="sc" role="listitem">
+          <span class="sn" aria-hidden="true">03</span>
+          <div class="si" style="background:rgba(99,102,241,.08);border-color:rgba(99,102,241,.18);color:var(--indigo)" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+          <h3>Immersive UI/UX</h3>
+          <p>Design that breathes. Intuitive, user-centric interfaces that convert visitors into loyal brand advocates.</p>
+          <span class="sarr" aria-hidden="true">→</span>
+        </a>
+
+        <a href="service-robotics.html" class="sc" role="listitem">
+          <span class="sn" aria-hidden="true">04</span>
+          <div class="si" style="background:rgba(239,68,68,.08);border-color:rgba(239,68,68,.18);color:var(--red)" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2v4M5 6l3 3M19 6l-3 3M2 12h4M18 12h4M5 18l3-3M19 18l-3-3M12 22v-4M9 12a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/></svg></div>
+          <h3>Robotics &amp; Hardware</h3>
+          <p>Bridging the physical and digital. Custom control systems and robotic software for next-gen automation.</p>
+          <span class="sarr" aria-hidden="true">→</span>
+        </a>
+
+        <a href="service-iot.html" class="sc" role="listitem">
+          <span class="sn" aria-hidden="true">05</span>
+          <div class="si" style="background:rgba(34,197,94,.08);border-color:rgba(34,197,94,.18);color:var(--green)" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M5 12.55a11 11 0 0 1 14.08 0"/><path d="M1.42 9a16 16 0 0 1 21.16 0"/><path d="M8.53 16.11a6 6 0 0 1 6.95 0"/><circle cx="12" cy="20" r="1" fill="currentColor"/></svg></div>
+          <h3>IoT Ecosystems</h3>
+          <p>Smart connectivity. Secure, scalable IoT networks that bring your hardware to life with end-to-end solutions.</p>
+          <span class="sarr" aria-hidden="true">→</span>
+        </a>
+
+        <a href="service-bespoke.html" class="sc" role="listitem">
+          <span class="sn" aria-hidden="true">06</span>
+          <div class="si" style="background:rgba(251,191,36,.08);border-color:rgba(251,191,36,.18);color:var(--amber)" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg></div>
+          <h3>Bespoke Software</h3>
+          <p>Tailored digital infrastructure. Robust backends and dynamic frontends built for your unique business logic.</p>
+          <span class="sarr" aria-hidden="true">→</span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section id="process" aria-labelledby="process-heading">
+    <div class="wrap">
+      <div class="ph rv">
+        <p class="stag stag-center">How We Work</p>
+        <h2 id="process-heading" class="sh2">The Devzelo <span class="gt">Process</span></h2>
+        <p class="sp">Everything you need to know about working with Devzelo. We ensure your product evolves exactly as you envision.</p>
+      </div>
+      <ol class="psteps rv" aria-label="Our 4-step process">
+        <li class="pstep"><div class="pnum" aria-hidden="true">01</div><h3>Discover</h3><p>We dive deep into your business logic, dismantling complexities to find the core opportunity.</p></li>
+        <li class="pstep"><div class="pnum" aria-hidden="true">02</div><h3>Design</h3><p>Designing scalable, future-proof systems. No technical debt, just clean, efficient foundations.</p></li>
+        <li class="pstep"><div class="pnum" aria-hidden="true">03</div><h3>Build</h3><p>Agile sprints with rapid feedback loops. You see your product evolve in real-time.</p></li>
+        <li class="pstep"><div class="pnum" aria-hidden="true">04</div><h3>Scale</h3><p>Launch is just day one. We monitor, optimize, and scale your solution as you grow.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- WORKS -->
+  <section id="works" aria-labelledby="works-heading">
+    <div class="wrap">
+      <div class="wh">
+        <div><p class="stag">Our Work</p><h2 id="works-heading" class="sh2">Selected Projects<br><span class="gt">That Propel</span></h2></div>
+        <a href="https://cal.com/devzelo/30min" target="_blank" rel="noopener" class="btn2">Start a Project →</a>
+      </div>
+      <div class="wmarquee rv">
+        <div class="wtrack">
+          <!-- Set 1 -->
+          <article class="wc"><div class="wc-img-box"><img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&q=80&w=600" class="wc-img" loading="lazy" alt="FinPulse mobile app development project"><div class="wc-img-overlay"></div></div><div class="wc-content"><div class="wc-head"><h3 class="wc-title">FinPulse</h3><span class="wc-badge">Mobile App</span></div><span class="wc-client">Banking & Finance</span><p class="wc-desc">A next-gen fintech application enabling real-time crypto trading and fiat management with military-grade security and UX.</p><div class="wc-stats"><span class="wc-stat">99.9% Secure</span><span class="wc-stat">40% Faster Trading</span></div></div></article>
+          <article class="wc"><div class="wc-img-box"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=600" class="wc-img" loading="lazy" alt="MediBot AI healthcare solution project"><div class="wc-img-overlay"></div></div><div class="wc-content"><div class="wc-head"><h3 class="wc-title">MediBot AI</h3><span class="wc-badge">AI Solution</span></div><span class="wc-client">Healthcare Tech</span><p class="wc-desc">NLP-powered diagnostic assistant reducing patient triage time by 40% through automated symptom analysis and prediction.</p><div class="wc-stats"><span class="wc-stat">40% Wait Reduction</span><span class="wc-stat">92% Accuracy</span></div></div></article>
+          <article class="wc"><div class="wc-img-box"><img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&q=80&w=600" class="wc-img" loading="lazy" alt="AgroSmart IoT and hardware project"><div class="wc-img-overlay"></div></div><div class="wc-content"><div class="wc-head"><h3 class="wc-title">AgroSmart</h3><span class="wc-badge">IoT & Hardware</span></div><span class="wc-client">Smart Agriculture</span><p class="wc-desc">Automated irrigation and soil monitoring for large-scale vertical farms using custom sensors and intelligent dashboarding.</p><div class="wc-stats"><span class="wc-stat">30% Water Saving</span><span class="wc-stat">24/7 Monitoring</span></div></div></article>
+          <!-- Set 2 -->
+          <article class="wc"><div class="wc-img-box"><img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&q=80&w=600" class="wc-img" loading="lazy" alt="FinPulse mobile app development project"><div class="wc-img-overlay"></div></div><div class="wc-content"><div class="wc-head"><h3 class="wc-title">FinPulse</h3><span class="wc-badge">Mobile App</span></div><span class="wc-client">Banking & Finance</span><p class="wc-desc">A next-gen fintech application enabling real-time crypto trading and fiat management with military-grade security and UX.</p><div class="wc-stats"><span class="wc-stat">99.9% Secure</span><span class="wc-stat">40% Faster Trading</span></div></div></article>
+          <article class="wc"><div class="wc-img-box"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=600" class="wc-img" loading="lazy" alt="MediBot AI healthcare solution project"><div class="wc-img-overlay"></div></div><div class="wc-content"><div class="wc-head"><h3 class="wc-title">MediBot AI</h3><span class="wc-badge">AI Solution</span></div><span class="wc-client">Healthcare Tech</span><p class="wc-desc">NLP-powered diagnostic assistant reducing patient triage time by 40% through automated symptom analysis and prediction.</p><div class="wc-stats"><span class="wc-stat">40% Wait Reduction</span><span class="wc-stat">92% Accuracy</span></div></div></article>
+          <article class="wc"><div class="wc-img-box"><img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&q=80&w=600" class="wc-img" loading="lazy" alt="AgroSmart IoT and hardware project"><div class="wc-img-overlay"></div></div><div class="wc-content"><div class="wc-head"><h3 class="wc-title">AgroSmart</h3><span class="wc-badge">IoT & Hardware</span></div><span class="wc-client">Smart Agriculture</span><p class="wc-desc">Automated irrigation and soil monitoring for large-scale vertical farms using custom sensors and intelligent dashboarding.</p><div class="wc-stats"><span class="wc-stat">30% Water Saving</span><span class="wc-stat">24/7 Monitoring</span></div></div></article>
+          <!-- Set 3 -->
+          <article class="wc"><div class="wc-img-box"><img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&q=80&w=600" class="wc-img" loading="lazy" alt="FinPulse mobile app development project"><div class="wc-img-overlay"></div></div><div class="wc-content"><div class="wc-head"><h3 class="wc-title">FinPulse</h3><span class="wc-badge">Mobile App</span></div><span class="wc-client">Banking & Finance</span><p class="wc-desc">A next-gen fintech application enabling real-time crypto trading and fiat management with military-grade security and UX.</p><div class="wc-stats"><span class="wc-stat">99.9% Secure</span><span class="wc-stat">40% Faster Trading</span></div></div></article>
+          <article class="wc"><div class="wc-img-box"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=600" class="wc-img" loading="lazy" alt="MediBot AI healthcare solution project"><div class="wc-img-overlay"></div></div><div class="wc-content"><div class="wc-head"><h3 class="wc-title">MediBot AI</h3><span class="wc-badge">AI Solution</span></div><span class="wc-client">Healthcare Tech</span><p class="wc-desc">NLP-powered diagnostic assistant reducing patient triage time by 40% through automated symptom analysis and prediction.</p><div class="wc-stats"><span class="wc-stat">40% Wait Reduction</span><span class="wc-stat">92% Accuracy</span></div></div></article>
+          <article class="wc"><div class="wc-img-box"><img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&q=80&w=600" class="wc-img" loading="lazy" alt="AgroSmart IoT and hardware project"><div class="wc-img-overlay"></div></div><div class="wc-content"><div class="wc-head"><h3 class="wc-title">AgroSmart</h3><span class="wc-badge">IoT & Hardware</span></div><span class="wc-client">Smart Agriculture</span><p class="wc-desc">Automated irrigation and soil monitoring for large-scale vertical farms using custom sensors and intelligent dashboarding.</p><div class="wc-stats"><span class="wc-stat">30% Water Saving</span><span class="wc-stat">24/7 Monitoring</span></div></div></article>
+          <!-- Set 4 -->
+          <article class="wc"><div class="wc-img-box"><img src="https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?auto=format&fit=crop&q=80&w=600" class="wc-img" loading="lazy" alt="FinPulse mobile app development project"><div class="wc-img-overlay"></div></div><div class="wc-content"><div class="wc-head"><h3 class="wc-title">FinPulse</h3><span class="wc-badge">Mobile App</span></div><span class="wc-client">Banking & Finance</span><p class="wc-desc">A next-gen fintech application enabling real-time crypto trading and fiat management with military-grade security and UX.</p><div class="wc-stats"><span class="wc-stat">99.9% Secure</span><span class="wc-stat">40% Faster Trading</span></div></div></article>
+          <article class="wc"><div class="wc-img-box"><img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&q=80&w=600" class="wc-img" loading="lazy" alt="MediBot AI healthcare solution project"><div class="wc-img-overlay"></div></div><div class="wc-content"><div class="wc-head"><h3 class="wc-title">MediBot AI</h3><span class="wc-badge">AI Solution</span></div><span class="wc-client">Healthcare Tech</span><p class="wc-desc">NLP-powered diagnostic assistant reducing patient triage time by 40% through automated symptom analysis and prediction.</p><div class="wc-stats"><span class="wc-stat">40% Wait Reduction</span><span class="wc-stat">92% Accuracy</span></div></div></article>
+          <article class="wc"><div class="wc-img-box"><img src="https://images.unsplash.com/photo-1558449028-b53a39d100fc?auto=format&fit=crop&q=80&w=600" class="wc-img" loading="lazy" alt="AgroSmart IoT and hardware project"><div class="wc-img-overlay"></div></div><div class="wc-content"><div class="wc-head"><h3 class="wc-title">AgroSmart</h3><span class="wc-badge">IoT & Hardware</span></div><span class="wc-client">Smart Agriculture</span><p class="wc-desc">Automated irrigation and soil monitoring for large-scale vertical farms using custom sensors and intelligent dashboarding.</p><div class="wc-stats"><span class="wc-stat">30% Water Saving</span><span class="wc-stat">24/7 Monitoring</span></div></div></article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section id="testimonials" aria-labelledby="testimonials-heading">
+    <div class="wrap">
+      <div class="rv" style="text-align:center"><p class="stag stag-center">Social Proof</p><h2 id="testimonials-heading" class="sh2">Client <span class="gt">Testimonials</span></h2></div>
+      <div class="tg rv">
+        <article class="tc">
+          <div class="tstars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="tq" aria-hidden="true">"</div>
+          <blockquote class="ttxt">"Devzelo didn't just build our app; they re-engineered our entire user flow. The attention to detail in the UI is unmatched in the region."</blockquote>
+          <div class="tau">
+            <img src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Chen, CTO of Nexus Stream" class="tav" width="46" height="46" loading="lazy"/>
+            <div><div class="tname">Sarah Chen</div><div class="trole">CTO · Nexus Stream</div></div>
+          </div>
+        </article>
+        <article class="tc">
+          <div class="tstars" aria-label="5 out of 5 stars">★★★★★</div>
+          <div class="tq" aria-hidden="true">"</div>
+          <blockquote class="ttxt">"Their expertise in AI automation saved us hundreds of man-hours. They understood our business logic faster than any other agency we've worked with."</blockquote>
+          <div class="tau">
+            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Michael Ross, Founder of AutoMate" class="tav" width="46" height="46" loading="lazy"/>
+            <div><div class="tname">Michael Ross</div><div class="trole">Founder · AutoMate</div></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARTICLES / BLOG PREVIEW -->
+  <section id="blog-preview" aria-labelledby="blog-heading">
+    <div class="wrap">
+      <div class="wh">
+        <div>
+          <p class="stag">Latest Insights</p>
+          <h2 id="blog-heading" class="sh2">Thought Leadership<br><span class="gt">In Tech & AI</span></h2>
+        </div>
+        <a href="articles.html" class="btn2">View All Articles →</a>
+      </div>
+      <div class="sg rv" role="list">
+        <a href="article-agentic-ai.html" class="sc" role="listitem" style="padding:0;display:flex;flex-direction:column;text-decoration:none;color:inherit">
+          <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=800" alt="Agentic AI illustration" style="width:100%;height:200px;object-fit:cover;border-radius:28px 28px 0 0"/>
+          <div style="padding:30px">
+            <div class="si" style="background:rgba(6,182,212,.08);border-color:rgba(6,182,212,.18);color:var(--cyan);margin-bottom:18px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2a4 4 0 0 1 4 4 4 4 0 0 1-4 4 4 4 0 0 1-4-4 4 4 0 0 1 4-4m0 10c4.42 0 8 1.79 8 4v2H4v-2c0-2.21 3.58-4 8-4"/></svg></div>
+            <p class="stag" style="margin-bottom:12px;font-size:0.7rem">AI & Automation</p>
+            <h3 style="font-size:1.25rem;margin-bottom:16px">The Rise of Agentic AI: Beyond Simple Automation</h3>
+            <p>Explore how AI agents are moving from reactive tools to proactive partners that can execute complex business logic autonomously.</p>
+            <span class="sarr" aria-hidden="true">→</span>
+          </div>
+        </a>
+
+        <a href="article-edge-iot.html" class="sc" role="listitem" style="padding:0;display:flex;flex-direction:column;text-decoration:none;color:inherit">
+          <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&q=80&w=800" alt="SaaS and IoT scaling" style="width:100%;height:200px;object-fit:cover;border-radius:28px 28px 0 0"/>
+          <div style="padding:30px">
+            <div class="si" style="background:rgba(99,102,241,.08);border-color:rgba(99,102,241,.18);color:var(--indigo);margin-bottom:18px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg></div>
+            <p class="stag" style="margin-bottom:12px;font-size:0.7rem">Enterprise Tech</p>
+            <h3 style="font-size:1.25rem;margin-bottom:16px">Scaling Your SaaS with Edge Computing and IoT</h3>
+            <p>Learn how integrating IoT at the edge can reduce latency and operational costs for modern data-heavy enterprise applications.</p>
+            <span class="sarr" aria-hidden="true">→</span>
+          </div>
+        </a>
+
+        <a href="article-robotics-frontier.html" class="sc" role="listitem" style="padding:0;display:flex;flex-direction:column;text-decoration:none;color:inherit">
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&q=80&w=800" alt="Industrial robotics" style="width:100%;height:200px;object-fit:cover;border-radius:28px 28px 0 0"/>
+          <div style="padding:30px">
+            <div class="si" style="background:rgba(239,68,68,.08);border-color:rgba(239,68,68,.18);color:var(--red);margin-bottom:18px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75"><path d="M12 2v4M5 6l3 3M19 6l-3 3M2 12h4M18 12h4M5 18l3-3M19 18l-3-3M12 22v-4M9 12a3 3 0 1 1 6 0 3 3 0 0 1-6 0z"/></svg></div>
+            <p class="stag" style="margin-bottom:12px;font-size:0.7rem">Robotics</p>
+            <h3 style="font-size:1.25rem;margin-bottom:16px">Human-Robot Collaboration: The New Industrial Frontier</h3>
+            <p>How bespoke control systems are enabling safer and more efficient workspaces where humans and robots work side-by-side.</p>
+            <span class="sarr" aria-hidden="true">→</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section id="faq" aria-labelledby="faq-heading">
+    <div class="wrap">
+      <div class="fh rv"><p class="stag stag-center">Questions</p><h2 id="faq-heading" class="sh2">Frequently <span class="gt">Asked</span></h2><p class="sp">Everything you need to know about working with Devzelo. Can't find the answer? <a href="https://cal.com/devzelo/30min" target="_blank" rel="noopener" style="color:var(--blue)">Book a call directly.</a></p></div>
+      <div class="fl rv" role="list">
+        <div class="fi" role="listitem"><button class="fq" onclick="faq(this)" aria-expanded="false">What industries do you specialise in?<span class="ficon" aria-hidden="true">+</span></button><div class="fa" role="region"><div class="fai">We are industry-agnostic but have deep expertise in FinTech, Healthcare, Agriculture, and E-commerce. Our core strength lies in solving complex technical challenges regardless of the vertical.</div></div></div>
+        <div class="fi" role="listitem"><button class="fq" onclick="faq(this)" aria-expanded="false">How do you handle project communication?<span class="ficon" aria-hidden="true">+</span></button><div class="fa" role="region"><div class="fai">We believe in radical transparency. You get access to our Slack/Discord and Jira/Trello boards. We hold weekly sprint reviews to ensure the product evolves exactly as you envision.</div></div></div>
+        <div class="fi" role="listitem"><button class="fq" onclick="faq(this)" aria-expanded="false">Can you take over an existing codebase?<span class="ficon" aria-hidden="true">+</span></button><div class="fa" role="region"><div class="fai">Yes. We perform a comprehensive code audit first to identify technical debt and security vulnerabilities, then propose a refactoring or expansion plan.</div></div></div>
+        <div class="fi" role="listitem"><button class="fq" onclick="faq(this)" aria-expanded="false">Do you provide post-launch support?<span class="ficon" aria-hidden="true">+</span></button><div class="fa" role="region"><div class="fai">Absolutely. We offer various maintenance packages including server monitoring, bug fixes, and feature updates to keep your software running smoothly.</div></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" aria-labelledby="contact-heading">
+    <div class="wrap">
+      <div class="ctabox rv">
+        <div class="ctag" aria-hidden="true"></div>
+        <p class="stag stag-center">Get Started</p>
+        <h2 id="contact-heading">Ready to Transform<br>Your <span class="gt">Digital Future?</span></h2>
+        <p>The future doesn't wait. Schedule a discovery call with our experts in Lahore and let's map out your path to digital dominance.</p>
+        <div class="ctabtns">
+          <a href="https://cal.com/devzelo/30min" target="_blank" rel="noopener" class="btn1">Schedule Discovery Call <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+          <a href="#services" class="btn2">Service Overview</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="wrap">
+    <div class="footer-grid">
+
+      <!-- Col 1: Brand -->
+      <div class="footer-col">
+        <a href="/" class="logo" style="margin-bottom:0" aria-label="Devzelo home">
+          <svg viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <defs><linearGradient id="flg" x1="0" y1="0" x2="40" y2="40" gradientUnits="userSpaceOnUse"><stop stop-color="#3B82F6"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs>
+            <circle cx="20" cy="20" r="6" stroke="url(#flg)" stroke-width="2.5" fill="none"/>
+            <circle cx="20" cy="20" r="2.5" fill="#3B82F6"/>
+            <path d="M20 14V6M20 26V34M14 20H6M26 20H34M16 16L10 10M24 24L30 30M16 24L10 30M24 16L30 10" stroke="url(#flg)" stroke-width="2" stroke-linecap="round"/>
+            <circle cx="20" cy="4" r="2" fill="#06b6d4"/>
+            <circle cx="36" cy="20" r="2" fill="#3B82F6"/>
+            <circle cx="20" cy="36" r="2" fill="#06b6d4"/>
+            <circle cx="4" cy="20" r="2" fill="#3B82F6"/>
+            <path d="M34 20A14 14 0 0 1 20 34" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4" opacity="0.5"/>
+            <path d="M6 20A14 14 0 0 1 20 6" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-dasharray="4 4" opacity="0.5"/>
+          </svg>
+          <span><span style="color:#fff;-webkit-text-fill-color:#fff">Dev</span><span class="gt">zelo</span></span>
+        </a>
+        <p class="footer-tagline">Building future-proof software from Lahore, Pakistan. Engineering global solutions with local dedication and round-the-clock availability.</p>
+        <div class="footer-social" aria-label="Social media links">
+          <a href="https://www.linkedin.com/company/devzelo/" target="_blank" rel="noopener" aria-label="LinkedIn"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          <a href="https://x.com/devzelo_" target="_blank" rel="noopener" aria-label="X (Twitter)"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg></a>
+          <a href="https://www.facebook.com/profile.php?id=61584478157824" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="https://www.instagram.com/devzelo_/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+          <a href="https://www.youtube.com/@devzelo" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.25 29 29 0 0 0-.46-5.33zM9.75 15.02V8.48L15.45 11.75z"/></svg></a>
+        </div>
+      </div>
+
+      <!-- Col 2: Services -->
+      <div class="footer-col">
+        <p class="footer-col-title">Services</p>
+        <ul>
+          <li><a href="service-mobile-app.html">Mobile App Evolution</a></li>
+          <li><a href="service-ai.html">AI &amp; Automation</a></li>
+          <li><a href="service-ui-ux.html">Immersive UI/UX</a></li>
+          <li><a href="service-robotics.html">Robotics &amp; Hardware</a></li>
+          <li><a href="service-iot.html">IoT Ecosystems</a></li>
+          <li><a href="service-bespoke.html">Bespoke Software</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Company -->
+      <div class="footer-col">
+        <p class="footer-col-title">Company</p>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#works">Our Work</a></li>
+          <li><a href="#process">How We Work</a></li>
+          <li><a href="#testimonials">Testimonials</a></li>
+          <li><a href="articles.html">Articles</a></li>
+          <li><a href="#faq">FAQ</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 4: Contact -->
+      <div class="footer-col">
+        <p class="footer-col-title">Get In Touch</p>
+        <a href="https://cal.com/devzelo/30min" target="_blank" rel="noopener" class="footer-cta-btn">
+          Schedule a Call
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="mailto:contact@devzelo.com" class="footer-email"><svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,12 2,6"/></svg>contact@devzelo.com</a><div class="footer-location">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <div>
+            <div style="color:rgba(255,255,255,.7);font-weight:500">Lahore, Pakistan</div>
+            <div>Available Remotely 24/7</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Bottom bar -->
+    <div class="footer-bottom">
+      <p class="fcopy">© 2025 Devzelo. All rights reserved.</p>
+      <nav class="footer-legal" aria-label="Legal links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+      </nav>
+    </div>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="assets/main.js"></script>
+
+
+
+<!-- Elfsight AI Chatbot -->
+<script src="https://elfsightcdn.com/platform.js" async></script>
+<div class="elfsight-app-acad21f6-177e-432d-90d7-25c6a6c22969" data-elfsight-app-lazy></div>
+</body>
 </html>

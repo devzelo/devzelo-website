@@ -1,0 +1,13 @@
+{
+  "name": "devzelo-site",
+  "version": "1.0.0",
+  "description": "Static build for Devzelo website",
+  "scripts": {
+    "build": "node build.js"
+  },
+  "devDependencies": {
+    "html-minifier-terser": "^7.2.0",
+    "csso": "^5.0.5",
+    "rimraf": "^5.0.0"
+  }
+}

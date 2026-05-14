@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://devzelo.com/sitemap.xml

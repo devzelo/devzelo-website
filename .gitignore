@@ -13,3 +13,9 @@ npm-debug.log*
 # Env
 .env
 .env.local
+
+# Build
+dist/
+node_modules/
+.vercel
+.claude/
