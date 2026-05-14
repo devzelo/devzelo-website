@@ -140,16 +140,20 @@ article,main{position:relative;z-index:2}
 .mnav-header{display:none !important}
 /* ── Typography utilities ── */
 .gt{
-  background:linear-gradient(135deg,var(--blue),var(--cyan));
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  background-clip:text;
+  background:linear-gradient(135deg,var(--blue),var(--cyan)) !important;
+  -webkit-background-clip:text !important;
+  background-clip:text !important;
+  -webkit-text-fill-color:transparent !important;
+  color:transparent !important;
+  display:inline-block !important;
 }
 .gt2{
-  background:linear-gradient(135deg,var(--indigo),var(--blue),var(--cyan));
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
-  background-clip:text;
+  background:linear-gradient(135deg,var(--indigo),var(--blue),var(--cyan)) !important;
+  -webkit-background-clip:text !important;
+  background-clip:text !important;
+  -webkit-text-fill-color:transparent !important;
+  color:transparent !important;
+  display:inline-block !important;
 }
 
 .stag{

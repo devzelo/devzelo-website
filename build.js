@@ -53,7 +53,7 @@
   const cssPath = path.join(srcDir, 'style.css');
   if (fs.existsSync(cssPath)) {
     const css = fs.readFileSync(cssPath, 'utf-8');
-    const minCss = csso.minify(css).css;
+    const minCss = csso.minify(css, { restructure: false }).css;
     fs.writeFileSync(path.join(outDir, 'style.css'), minCss, 'utf-8');
     console.log('CSS → style.css');
   }
