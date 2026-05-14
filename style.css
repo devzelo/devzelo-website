@@ -941,6 +941,11 @@ footer{
   border-radius:100px;font-size:.855rem;font-weight:600;color:#fff;
   transition:transform .2s,box-shadow .2s;
 }
+@media(max-width:540px){
+  .footer-cta-btn{display:flex;justify-content:center;margin-bottom:8px}
+  .footer-email{display:flex;justify-content:center;margin-top:8px}
+  .footer-location{justify-content:center;text-align:center}
+}
 .footer-cta-btn:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(59,130,246,.36)}
 .footer-bottom{
   display:flex;align-items:center;justify-content:space-between;
