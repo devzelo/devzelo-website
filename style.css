@@ -236,6 +236,7 @@ header.scrolled{
   display:flex;align-items:center;gap:10px;
   font-family:'Space Grotesk',sans-serif;
   font-size:1.25rem;font-weight:700;letter-spacing:-.02em;
+  color:#fff;
 }
 .logo svg{width:32px;height:32px;flex-shrink:0}
 
