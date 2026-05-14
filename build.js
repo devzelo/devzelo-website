@@ -58,5 +58,15 @@
     console.log('CSS → style.css');
   }
 
+  // Copy sitemap and robots
+  const extraFiles = ['sitemap.xml', 'robots.txt'];
+  for (const f of extraFiles) {
+    const fPath = path.join(srcDir, f);
+    if (fs.existsSync(fPath)) {
+      fs.copyFileSync(fPath, path.join(outDir, f));
+      console.log(`Copy → ${f}`);
+    }
+  }
+
   console.log('✅ Build completed. Output in /dist');
 })();
