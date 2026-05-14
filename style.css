@@ -146,16 +146,12 @@ article,main{position:relative;z-index:2}
   background:linear-gradient(135deg,#3b82f6,#06b6d4);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
-  background-clip:text;
-  color:transparent;
   display:inline;
 }
 .gt2{
   background:linear-gradient(135deg,#6366f1,#3b82f6,#06b6d4);
   -webkit-background-clip:text;
   -webkit-text-fill-color:transparent;
-  background-clip:text;
-  color:transparent;
   display:inline;
 }
 
